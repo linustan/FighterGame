@@ -1,0 +1,17 @@
+{
+  "name": "com.terallite.gamelogic",
+  "version": "0.1.0",
+  "displayName": "Game Logic",
+  "description": "",
+  "unity": "6000.0",
+  "unityRelease": "43f1",
+  "dependencies": {
+  },
+  "keywords": [],
+  "author": {
+    "name": "Linus Tan",
+    "email": "linus@terallite.com",
+    "url": "https://www.terallite.com"
+  }
+}
+

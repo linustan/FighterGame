@@ -1,5 +1,8 @@
 namespace Packages.com.terallite.gamelogic.Runtime
 {
+    // Concrete implementation of a player/enemy spaceship entity.
+    // Manages movement, durability (health), and firing projectiles.
+    // Serves as one of the main gameplay elements in the simulation.
     public class Fighter : Entity, IDurable
     {
         public delegate void FireProjectileHandler(Fighter instigator, EntityType projectileType, Vector2 projectileHeading);

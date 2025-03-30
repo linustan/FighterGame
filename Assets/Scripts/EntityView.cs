@@ -1,6 +1,9 @@
 using UnityEngine;
 using Logic = Packages.com.terallite.gamelogic.Runtime;
 
+// Links logical game entities to their Unity GameObject representations.
+// Synchronizes position, rotation, and health between model and view.
+// Acts as the view component in the MVC architecture.
 public class EntityView : MonoBehaviour
 {
     private Logic.IDurable _associatedDurableEntity;

@@ -12,6 +12,9 @@ namespace Packages.com.terallite.gamelogic.Runtime
         Enemy
     }
 
+    // Abstract base class for all game objects in the simulation.
+    // Provides common functionality for position, heading, team assignment, and lifecycle management.
+    // Part of the core entity framework forming the game's model layer.
     public abstract class Entity
     {
         public delegate void DespawnHandler(Entity entity);

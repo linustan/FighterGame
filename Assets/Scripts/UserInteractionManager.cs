@@ -7,6 +7,9 @@ using UnityEngine;
 using Logic = Packages.com.terallite.gamelogic.Runtime;
 using Object = UnityEngine.Object;
 
+// Manages player interactions through a state machine pattern.
+// Handles selection of units, movement orders, and targeting.
+// Demonstrates clean separation between input handling and game logic.
 [Serializable]
 public class UserInteractionManager
 {

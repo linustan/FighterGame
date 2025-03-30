@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace Packages.com.terallite.gamelogic.Runtime
 {
+    // Central orchestrator for the game simulation. 
+    // Manages all entities, handles spawning/despawning, and tracks win/loss conditions.
+    // Acts as the main entry point for the game logic layer.
     public class World
     {
         public delegate void SpawnHandler(object sender, Entity entity);

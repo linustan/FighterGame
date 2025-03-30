@@ -1,5 +1,8 @@
 namespace Packages.com.terallite.gamelogic.Runtime
 {
+    // Projectile fired by Fighter entities. 
+    // Manages its own movement, collision detection, and damage dealing.
+    // Represents the weapon system in the game.
     public class Laser : Entity
     {
         private readonly ColliderBox _collider;

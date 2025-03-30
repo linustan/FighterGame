@@ -14,6 +14,23 @@ This separation allows for:
 - Cleaner code organization and maintenance.
 - Potential reuse of game logic across different implementations, for example in a hypothetical backend.
 
+## Guided Tour
+
+### Core Game Logic (The Model)
+The heart of the game is in the custom package `Packages/com.terallite.gamelogic/Runtime/`:
+
+1. Start with **World.cs** - The central orchestrator that manages the game state, entities, and win/loss conditions
+2. Examine the entity infrastructure in **Entity.cs** - The abstract base class for all game objects
+3. See how collisions work in **CollisionSystem.cs** - The system for detecting and resolving entity interactions
+4. Check out **Fighter.cs** and **Laser.cs** - Concrete implementations of entities that make up the gameplay
+
+### Unity Integration (The View/Controller)
+Then examine how the game logic is connected to Unity in `Assets/Scripts/`:
+
+1. **GameManager.cs** - The main MonoBehaviour that bridges game logic to Unity
+2. **EntityView.cs** - Renders game entities and syncs their state with Unity objects
+3. **UserInteractionManager.cs** - Handles player input via a state machine pattern
+
 ## Key Components
 
 ### Game Logic (com.terallite.gamelogic)
@@ -37,7 +54,7 @@ The codebase implements several design patterns:
 
 1. **Model-View-Controller (MVC)** - Separating game logic (model) from Unity behaviors (view/controller).
 2. **State Pattern** - For game flow management.
-5. **Observer Pattern** - For event handling and communication between systems.
+3. **Observer Pattern** - For event handling and communication between systems.
 
 ## Getting Started
 

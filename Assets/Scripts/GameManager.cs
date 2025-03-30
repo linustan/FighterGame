@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using Logic = Packages.com.terallite.gamelogic.Runtime;
 
-
+// Main Unity component that bridges the pure C# game logic with Unity's systems.
+// Handles Unity lifecycle events, instantiates entity prefabs, and manages UI state.
+// Acts as the primary controller in the MVC architecture.
 public class GameManager : MonoBehaviour
 {
     private const float TurnDuration = 2f;
